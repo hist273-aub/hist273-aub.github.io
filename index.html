@@ -1,14 +1,66 @@
 
 <!DOCTYPE html>
 <html>
+
+<head>
+	<title>
+	HIST 273
+</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://aubcdn.azureedge.net/aubwebsite/AUB/images/favicon.ico">
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	/* Create two equal columns that floats next to each other */
+	.column {
+	  float: left;
+	  width: 50%;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	}
+	<style>
+.btn-group button {
+  background-color: blue; /* Green background */
+  border: 15% solid white; /* Green border */
+  color: white; /* White text */
+  padding: 35% 15%; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #add8e6;
+  cursor:pointer;
+}
+button {
+	background-color:white;
+}
+</style>
+</style>
+</head>
 <body>
 
 
 <h2>My name is Makram Rabah your instructor for this semester  </h2>
 
-<p>Please add yourself on the following what's app group to make communication easier for the class 
+<p>Please add yourself on the following what's app group to make communication easier for the class
 
-The following google drive link has all the readings for this semester 
+The following google drive link has all the readings for this semester
 
 Our First class will be Monday Feb 1</p>
 
@@ -20,26 +72,47 @@ and i will have a short review session every Friday at 5
 
 If you have any questions for me kindly email me or ask via the class group</p>
 
-<p>Best 
+<p>Best
 
 Makram</p>
 
-<br><br><br>
-<button  onclick="document.location='https://chat.whatsapp.com/Edrf74Pjt7J1P0b1ZTbqX9 '">Whatsapp Zbele</button>
-<br><br><br>
-<button onclick="document.location='https://drive.google.com/drive/folders/1eSJOTOOPpdvAlhK4cR_RvOJO-BgUXjTU?usp=sharing'">Drive m3fn</button>
-<br><br><br>
-<button onclick="document.location='https://www.facebook.com/Makram-Rabah-History-classes-back-up-108293194148292 '">Facebook l habele</button>
-<br><br><br>
-<button style="background-color:green;" onclick="myFunction1()">Feb 1 2021 Intro</button><button style="background-color:green;" onclick="myFunction2()">Feb 8 2021 Early encounters</button><button onclick="myFunction3()">Feb 12 2021 American Ottomans</button><button onclick="myFunction4()">Feb 15 2021 The Rise of Arab Nationalism</button>
-<br>
-<button onclick="myFunction5()">Feb 18 2021 the making of a specail relation</button><button onclick="myFunction6()">Feb 22 2021 Operation Ajax</button><button onclick="myFunction7()">Feb 25 2021</button><button onclick="myFunction8()">Movie</button>
-<br><br><br>
+<div class="row">
+  <div class="column">
+				<div class="btn-group" style="width:100%">
+					<br><br><br>
+					<button style="width:30%"  onclick="window.open('https://chat.whatsapp.com/Edrf74Pjt7J1P0b1ZTbqX9 ','_blank')">Whatsapp</button>
+					<button style="width:30%"  onclick="window.open('https://drive.google.com/drive/folders/1eSJOTOOPpdvAlhK4cR_RvOJO-BgUXjTU?usp=sharing ','_blank')">GDrive</button>
+					<button style="width:30%"  onclick="window.open('https://www.facebook.com/Makram-Rabah-History-classes-back-up-108293194148292 ','_blank')">Facebook</button>
+					<br><br><br>
+				</div>
 
-<p id="description"></p>
+		<div class="btn-group" style="width:100%">
+			<button style="background-color: #90ee90;width:30%;" onclick="myFunction1()">Feb 1 2021</button>
+			<button style="background-color: #90ee90;width:30%;" onclick="myFunction2()">Feb 8 2021</button>
+			<button style="width:30%" onclick="myFunction3()">Feb 12 2021</button>
+			<br>
+		</div>
+		<div class="btn-group" style="width:100%">
+		<button style="width:30%" onclick="myFunction4()">Feb 15 2021</button>
+			<button style="width:30%" onclick="myFunction5()">Feb 18 2021</button>
+			<button style="width:30%" onclick="myFunction6()">Feb 22 2021</button>
+			<br>
+		</div>
+		<div class="btn-group" style="width:100%">
+		<button style="width:30%" onclick="myFunction7()">Feb 25 2021</button>
+			<br><br>
+		</div>
+		<div class="btn-group" style="width:100%">
+		<button style="width:30%" onclick="myFunction8()">Movie Paper1</button>
+			<br><br><br>
+		</div>
+	</div>
+	<div class="column">
+		<p id="description"></p>
 
-<iframe id='d11' src="" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
+		<iframe id='d11' src="" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+	</div>
+</div>
 
 
 
@@ -55,7 +128,7 @@ function myFunction2() {
 	document.getElementById("d11").src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F108293194148292%2Fvideos%2F426259698431781%2F&show_text=false&width=560";
 }
 function myFunction3() {
-	document.getElementById("description").innerHTML ="Hist 273 Thursday 11-2-2021 Gorman, Henry. American Ottomans: Protestant Missionaries in an Islamic Empire’s Service, 1820–1919 *. Diplomatic History 43, no. 3 (June 2019): 544–68.";	
+	document.getElementById("description").innerHTML ="Hist 273 Thursday 11-2-2021 Gorman, Henry. American Ottomans: Protestant Missionaries in an Islamic Empire’s Service, 1820–1919 *. Diplomatic History 43, no. 3 (June 2019): 544–68.";
 	document.getElementById("d11").src= "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F108293194148292%2Fvideos%2F124190796267724%2F&show_text=false&width=560";
 }
 function myFunction4() {
@@ -84,8 +157,3 @@ function myFunction8() {
 </html>
 </body>
 </html>
-
-
-
-
-
